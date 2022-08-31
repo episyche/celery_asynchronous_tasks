@@ -1,0 +1,3 @@
+# ignoring unwanted files
+*.pyc
+migrations
