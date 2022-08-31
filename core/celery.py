@@ -9,7 +9,8 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
 
 app = Celery( 'celery_app',
                broker='redis://localhost:6379/0',
-               backend='redis://localhost:6379/0'
+               # backend='redis://localhost:6379/0'
+               backend='django-db'
             )
             
 # Load task modules from all registered Django apps.
